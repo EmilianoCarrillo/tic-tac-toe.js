@@ -39,10 +39,6 @@ for (var i = 0; i < cuadros.length; i++) {
     cuadros[i].addEventListener('click', cuadroClickeado, false);
 }
 
-function unclickables(current){
-    current.style.pointerEvents = "none";
-}
-
 function ganador(){
     var color = "#1abc9c";
     console.log(cuadros[0].innerHTML + " " + cuadros[1].innerHTML + " " + cuadros[2].innerHTML);
@@ -95,7 +91,6 @@ function ganador(){
         return true;
     }
 }
-
 
 function reset(){
     location.reload();

@@ -51,6 +51,11 @@ td{
     transition: 300ms;
 }
 
+td:hover{
+    background: #ecf0f1;
+    transition: 300ms;
+}
+
 td:nth-of-type(2){
     border-left: 5px rgba(44, 62, 80,1.0) solid;
     border-right: 5px rgba(44, 62, 80,1.0) solid;
@@ -81,9 +86,7 @@ tr:nth-of-type(2) td{
     box-shadow: 0 0 10px rgba(44, 62, 80,.5);
     transition: 400ms;
 }
-#Reset:active{
-    background: rgba(22, 160, 133,1.0);
-}
+#Reset:active{background: rgba(22, 160, 133,1.0);}
 
 #Turno{
     font-size: 1.2rem;
@@ -91,13 +94,6 @@ tr:nth-of-type(2) td{
     text-align: center;
     color: #e74c3c;
 }
-
-
-td:hover{
-    background: #ecf0f1;
-    transition: 300ms;
-}
-
 
 @media only screen and (max-width: 500px) {
     #Tablero{
