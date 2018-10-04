@@ -1,14 +1,4 @@
 
-var uno = document.getElementById("Uno"),
-    dos = document.getElementById("Dos"),
-    tres = document.getElementById("Tres"),
-    cuatro = document.getElementById("Cuatro"),
-    cinco = document.getElementById("Cinco"),
-    seis = document.getElementById("Seis"),
-    siete = document.getElementById("Siete"),
-    ocho = document.getElementById("Ocho"),
-    nueve = document.getElementById("Nueve");
-
 var turnoAlert = document.getElementById("Turno");
 var cuadros = document.getElementsByClassName("cuadro");
 
@@ -55,53 +45,53 @@ function unclickables(current){
 
 function ganador(){
     var color = "#1abc9c";
-    console.log(uno.innerHTML + " " + dos.innerHTML + " " + tres.innerHTML);
-    if(uno.innerHTML == dos.innerHTML && uno.innerHTML == tres.innerHTML && uno.innerHTML != ""){
-        uno.style.background = color;
-        dos.style.background = color;
-        tres.style.background = color;
+    console.log(cuadros[0].innerHTML + " " + cuadros[1].innerHTML + " " + cuadros[2].innerHTML);
+    if(cuadros[0].innerHTML == cuadros[1].innerHTML && cuadros[0].innerHTML == cuadros[2].innerHTML && cuadros[0].innerHTML != ""){
+        cuadros[0].style.background = color;
+        cuadros[1].style.background = color;
+        cuadros[2].style.background = color;
         return true;
     }
-    else if(cuatro.innerHTML == cinco.innerHTML && cuatro.innerHTML == seis.innerHTML && cuatro.innerHTML != ""){
-        cuatro.style.background = color;
-        cinco.style.background = color;
-        seis.style.background = color;
+    else if(cuadros[3].innerHTML == cuadros[4].innerHTML && cuadros[3].innerHTML == cuadros[5].innerHTML && cuadros[3].innerHTML != ""){
+        cuadros[3].style.background = color;
+        cuadros[4].style.background = color;
+        cuadros[5].style.background = color;
         return true;
     }
-    else if(siete.innerHTML == ocho.innerHTML && siete.innerHTML == nueve.innerHTML && siete.innerHTML != ""){
-        siete.style.background = color;
-        ocho.style.background = color;
-        nueve.style.background = color;
+    else if(cuadros[6].innerHTML == cuadros[7].innerHTML && cuadros[6].innerHTML == cuadros[8].innerHTML && cuadros[6].innerHTML != ""){
+        cuadros[6].style.background = color;
+        cuadros[7].style.background = color;
+        cuadros[8].style.background = color;
         return true;
     }
-    else if(uno.innerHTML == cuatro.innerHTML && uno.innerHTML == siete.innerHTML && uno.innerHTML != ""){
-        uno.style.background = color;
-        cuatro.style.background = color;
-        siete.style.background = color;
+    else if(cuadros[0].innerHTML == cuadros[3].innerHTML && cuadros[0].innerHTML == cuadros[6].innerHTML && cuadros[0].innerHTML != ""){
+        cuadros[0].style.background = color;
+        cuadros[3].style.background = color;
+        cuadros[6].style.background = color;
         return true;
     }
-    else if(dos.innerHTML == cinco.innerHTML && dos.innerHTML == ocho.innerHTML && dos.innerHTML != ""){
-        dos.style.background = color;
-        cinco.style.background = color;
-        ocho.style.background = color;
+    else if(cuadros[1].innerHTML == cuadros[4].innerHTML && cuadros[1].innerHTML == cuadros[7].innerHTML && cuadros[1].innerHTML != ""){
+        cuadros[1].style.background = color;
+        cuadros[4].style.background = color;
+        cuadros[7].style.background = color;
         return true;
     }
-    else if(tres.innerHTML == seis.innerHTML && tres.innerHTML == nueve.innerHTML && tres.innerHTML != ""){
-        tres.style.background = color;
-        seis.style.background = color;
-        nueve.style.background = color;
+    else if(cuadros[2].innerHTML == cuadros[5].innerHTML && cuadros[2].innerHTML == cuadros[8].innerHTML && cuadros[2].innerHTML != ""){
+        cuadros[2].style.background = color;
+        cuadros[5].style.background = color;
+        cuadros[8].style.background = color;
         return true;
     }
-    else if(uno.innerHTML == cinco.innerHTML && uno.innerHTML == nueve.innerHTML && uno.innerHTML != ""){
-        uno.style.background = color;
-        cinco.style.background = color;
-        nueve.style.background = color;
+    else if(cuadros[0].innerHTML == cuadros[4].innerHTML && cuadros[0].innerHTML == cuadros[8].innerHTML && cuadros[0].innerHTML != ""){
+        cuadros[0].style.background = color;
+        cuadros[4].style.background = color;
+        cuadros[8].style.background = color;
         return true;
     }
-    else if(tres.innerHTML == cinco.innerHTML && tres.innerHTML == siete.innerHTML && tres.innerHTML != ""){
-        tres.style.background = color;
-        cinco.style.background = color;
-        siete.style.background = color;
+    else if(cuadros[2].innerHTML == cuadros[4].innerHTML && cuadros[2].innerHTML == cuadros[6].innerHTML && cuadros[2].innerHTML != ""){
+        cuadros[2].style.background = color;
+        cuadros[4].style.background = color;
+        cuadros[6].style.background = color;
         return true;
     }
 }

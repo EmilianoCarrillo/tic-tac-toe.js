@@ -34,7 +34,7 @@ h3{
 }
 
 #Tablero{
-    height: 100%;
+    height: 300px;
     margin: auto;
     width: 300px;
 }
@@ -51,12 +51,12 @@ td{
     transition: 300ms;
 }
 
-#Dos, #Cinco, #Ocho{
+td:nth-of-type(2){
     border-left: 5px rgba(44, 62, 80,1.0) solid;
     border-right: 5px rgba(44, 62, 80,1.0) solid;
 }
 
-#Cuatro, #Cinco, #Seis{
+tr:nth-of-type(2) td{
     border-top: 5px rgba(44, 62, 80,1.0) solid;
     border-bottom: 5px rgba(44, 62, 80,1.0) solid;
 }
