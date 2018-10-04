@@ -4,7 +4,7 @@ html{
     margin: 0;
     font-size: 1rem;
 
-    // Para no seleccionar texto
+    /* Para no seleccionar texto*/
     -webkit-touch-callout: none;/* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -17,7 +17,7 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate3d(-50%, -55%,0);
+    transform: translate3d(-50%, -50%,0);
 }
 
 h1, h3{
@@ -96,4 +96,22 @@ td{
 td:hover{
     background: #ecf0f1;
     transition: 300ms;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #Tablero{
+        width: 200px;
+    }
+    td{
+        width: 66px;
+        height: 66px;
+    }
+    h1{  font-size: 1.3em;}
+    h3{font-size: .7em;}
+    #Turno{font-size: 1em;}
+    #Reset{
+        font-size: 1em;
+        height: 40px;
+    }
 }
