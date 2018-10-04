@@ -84,15 +84,15 @@ function dibujarFigura(posicionMouse){
                     if(matrix[xMatrix][yMatrix] == undefined){
                         dibujarX(xBordeInf, yBordeInf);
                         cambiarTurno();
+                        matrix[xMatrix][yMatrix] = 1;
                     }
-                    matrix[xMatrix][yMatrix] = 1;
                 }
                 else {
                     if(matrix[xMatrix][yMatrix] == undefined){
                         dibujarO(xBordeInf, yBordeInf);
                         cambiarTurno();
+                        matrix[xMatrix][yMatrix] = 2;
                     }
-                    matrix[xMatrix][yMatrix] = 2;
                 }
             }
         }
