@@ -48,6 +48,7 @@ td{
     text-align: center;
     font-family: system-ui;
     font-weight: bold;
+    transition: 300ms;
 }
 
 #Dos, #Cinco, #Ocho{
@@ -93,5 +94,6 @@ td{
 
 
 td:hover{
-
+    background: #ecf0f1;
+    transition: 300ms;
 }
