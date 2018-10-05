@@ -1,10 +1,11 @@
 
 var jugador = 1;
-var cuadroTam = 100;
 
 var canvas = document.getElementById("Canvas");
 var ctx = canvas.getContext('2d');
 var turnoAlert = document.getElementById("Turno");
+
+var cuadroTam = 100;
 
 canvas.height = cuadroTam*3;
 canvas.width = cuadroTam*3;

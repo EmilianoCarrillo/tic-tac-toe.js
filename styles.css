@@ -98,6 +98,7 @@ tr:nth-of-type(2) td{
 @media only screen and (max-width: 500px) {
     #Tablero{
         width: 200px;
+        height: 200px;
     }
     td{
         width: 66px;
