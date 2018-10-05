@@ -2,7 +2,7 @@
 var jugador = 1;
 var cuadroTam = 100;
 
-var canvas = document.getElementById("Tablero");
+var canvas = document.getElementById("Canvas");
 var ctx = canvas.getContext('2d');
 var turnoAlert = document.getElementById("Turno");
 
